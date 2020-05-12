@@ -33,7 +33,7 @@ for i in range(len(Book_Title)):
 
 
     myfile = requests.get(file_url)
-    open("Downloads/"+filename+".pdf", 'wb').write(myfile.content)
+    open(filename+".pdf", 'wb').write(myfile.content)
     
     
     
