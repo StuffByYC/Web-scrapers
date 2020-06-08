@@ -49,7 +49,7 @@ driver.get(tab_url)
 sel = Selector(text=driver.page_source) 
 #xpath to extract the first h1 text 
 name = sel.xpath('//h1/text()').extract_first()
-email = sel.xpath('/html/body/div[4]/div/div/div[2]/section/div/div[1]/div/section[2]/div/a/text()').extract_first()
+email = sel.xpath('/html/body/div[4]/div/div/div[2]/section/div/div[1]/div/section[3]/div/a/text()').extract_first()
 
 
 a_list = name.split()
